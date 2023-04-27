@@ -10,6 +10,7 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { BannerCardsComponent } from './banner-cards/banner-cards.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { CategoriesComponent } from './categories/categories.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     HomeComponent,
     CarouselComponent,
     AboutUsComponent,
-    BannerCardsComponent
+    BannerCardsComponent,
+    CategoriesComponent
   ],
   imports: [
     BrowserModule,
