@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <img [src]=product.image alt="Image of {{product.name}}">
+        </div>
+        <div class="col-md-6">
+            <p class="category">{{product.category}}</p>
+            <h1 class="name">{{product.name}}</h1>
+            <app-catalog-product-price [price]="product.price" [discount]="product.discount" class="price"></app-catalog-product-price>
+            <div class="color-picker">
+                <p>Color:</p>
+                <img [src]=product.image alt="Smaller image" class="color-image active">
+            </div>
+            <app-product-size-chart></app-product-size-chart>
+        </div>
+    </div>
+</div>

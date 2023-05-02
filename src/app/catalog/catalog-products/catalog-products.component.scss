@@ -1,0 +1,29 @@
+.card {
+    border: 0;
+    border-radius: 0;
+
+    .card-body {
+        padding-left: 5px;
+        h5 {
+            font-size: 14px;
+        }
+
+        p {
+            font-size: 11px;
+            margin-bottom: 0;
+            text-transform: capitalize;
+        }
+    }
+    .card-img {
+        border-radius: 0;
+    }
+}
+
+.card:hover {
+    cursor: pointer;
+    background-color: black;
+
+    * {
+        color: white;
+    }
+}

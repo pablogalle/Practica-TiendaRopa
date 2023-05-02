@@ -1,0 +1,12 @@
+<div class="row">
+    <div class="col-md-4" *ngFor="let product of products">
+        <div class="card"  (click)="navegarAInfoProducto(product.id)">
+            <img [src]="product.image" class="card-img" alt="">
+            <div class="card-body">
+                <p>{{product.category}}</p>
+                <h5>{{product.name}}</h5>
+                <app-catalog-product-price [price]="product.price" [discount]="product.discount"></app-catalog-product-price>
+            </div>
+        </div>
+    </div>
+</div>

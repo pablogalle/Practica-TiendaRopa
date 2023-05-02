@@ -1,0 +1,38 @@
+.container {
+    margin-top: 140px;
+
+    .category {
+        text-transform: capitalize;
+        font-weight: lighter;
+    }
+
+    .name {
+        text-transform: capitalize;
+        font-weight: bold;
+    }
+
+    .price {
+        font-size: xx-large;
+
+    }
+
+    .color-picker {
+        margin-top: 20px;
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        .color-image {
+            width: 100px;
+        }
+        .color-image:hover{
+            cursor: pointer;
+        }
+        .active{
+            border-bottom: 4px solid;
+        }
+    }
+
+
+}

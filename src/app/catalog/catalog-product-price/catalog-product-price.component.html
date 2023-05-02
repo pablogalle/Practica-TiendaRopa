@@ -1,0 +1,6 @@
+<div *ngIf="discount==0">
+    {{price | currency:'EUR'}} </div>
+<div *ngIf="discount>0">
+    <del>{{ price | currency:'EUR'}}</del>
+    <span class="discounted-price"> {{price/discount*10 | currency: 'EUR'}}</span>
+</div>
