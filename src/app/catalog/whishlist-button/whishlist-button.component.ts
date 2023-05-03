@@ -1,4 +1,4 @@
-import { Component, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { faHeart as fasHeart } from '@fortawesome/free-solid-svg-icons';
 import { faHeart as farHeart } from '@fortawesome/free-regular-svg-icons';
 import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
@@ -10,10 +10,11 @@ import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
 })
 export class WhishlistButtonComponent {
 
+  @Input('liked')
+  like = false
+
   regularHeartIcon = farHeart
   solidHeartIcon = fasHeart
-
-  like = false
 
   toggleLike() {
     this.like = !this.like

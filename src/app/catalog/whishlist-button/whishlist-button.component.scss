@@ -1,5 +1,6 @@
 fa-icon{
     cursor: pointer;
+
 }
 .no-like{
     color: black;
@@ -9,15 +10,18 @@ fa-icon{
 }
 
 .btn{
-    border-radius: 0;
-    border: 2px solid;
+    border-radius: 50%;
+    height: 3em;
+    width: 3em;
 }
+
 span{
     padding: 5px;
 }
 
 .btn:hover{
     background-color: black;
+    border: 2px solid white;
 
     span{
         color:white

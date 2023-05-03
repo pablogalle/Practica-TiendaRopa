@@ -30,7 +30,7 @@ export class CatalogProductsComponent implements OnInit {
     this.catalogProductsService.obtenerProductos().subscribe(
       (data) => {
         data.forEach( (product) => {
-          const productImport: Product = new ProductImpl(product.id,product.name,product.category, product.price, product.discount, product.image)
+          const productImport: Product = new ProductImpl(product.id,product.name,product.category, product.price, product.discount, product.image, product.wishlist)
           this.products.push(productImport);
         });
       }

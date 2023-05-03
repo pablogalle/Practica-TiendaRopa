@@ -27,7 +27,7 @@ export class CatalogProductInfoComponent implements OnInit{
   obtenerInfoProducto(id: string) {
    this.productInfoService.obtenerInfoProducto(+id-1).subscribe(
     (product) => {
-      this.producto = new ProductInfoImpl(product.sizes, product.id, product.name, product.category, product.price, product.discount, product.image);
+      this.producto = new ProductInfoImpl(product.sizes, product.id, product.name, product.category, product.price, product.discount, product.image, product.wishlist);
     }
    ) 
   }

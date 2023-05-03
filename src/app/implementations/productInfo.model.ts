@@ -7,7 +7,8 @@ export class ProductInfoImpl implements ProductInfo {
     public price: number;
     public discount: number;
     public image: string;
-    sizes: boolean[];
+    public sizes: boolean[];
+    public wishlist: boolean;
    
     constructor(
         sizes: boolean[],
@@ -16,7 +17,8 @@ export class ProductInfoImpl implements ProductInfo {
         category: string,
         price: number,
         discount: number,
-        image: string
+        image: string,
+        wishlist: boolean
     ) {
         this.sizes = sizes
         this.id = id
@@ -25,6 +27,8 @@ export class ProductInfoImpl implements ProductInfo {
         this.price = price
         this.discount = discount
         this.image = image
-    } ;
+        this.wishlist = wishlist
+    }
+ ;
     
 }

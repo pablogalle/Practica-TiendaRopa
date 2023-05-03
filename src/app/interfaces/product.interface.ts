@@ -5,4 +5,5 @@ export interface Product{
     price: number
     discount: number
     image: string
+    wishlist: boolean
 }

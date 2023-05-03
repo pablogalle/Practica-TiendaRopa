@@ -7,6 +7,7 @@ export class ProductImpl implements Product {
     public price: number;
     public discount: number;
     public image: string;
+    public wishlist: boolean;
 
 
     constructor(
@@ -15,7 +16,8 @@ export class ProductImpl implements Product {
         category: string,
         price: number,
         discount: number,
-        image: string
+        image: string,
+        wishlist: boolean
     ) {
         this.id = id
         this.name = name
@@ -23,5 +25,7 @@ export class ProductImpl implements Product {
         this.price = price
         this.discount = discount
         this.image = image
+        this.wishlist = wishlist
     }
+    
 }

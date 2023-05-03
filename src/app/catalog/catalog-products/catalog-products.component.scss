@@ -4,6 +4,7 @@
 
     .card-body {
         padding-left: 5px;
+
         h5 {
             font-size: 14px;
         }
@@ -14,16 +15,28 @@
             text-transform: capitalize;
         }
     }
+
     .card-img {
         border-radius: 0;
+    }
+
+    .floating-like-btn {
+        position: absolute;
+        top: 0;
+    
+        left: 0;
+        padding: 1rem;
     }
 }
 
 .card:hover {
-    cursor: pointer;
     background-color: black;
 
     * {
         color: white;
+    }
+
+    .card-body:hover {
+        cursor: pointer;
     }
 }
