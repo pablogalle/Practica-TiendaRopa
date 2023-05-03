@@ -7,6 +7,7 @@ export class ProductInfoImpl implements ProductInfo {
     public price: number;
     public discount: number;
     public image: string;
+    sizes: boolean[];
    
     constructor(
         sizes: boolean[],
@@ -24,54 +25,6 @@ export class ProductInfoImpl implements ProductInfo {
         this.price = price
         this.discount = discount
         this.image = image
-    } sizes: boolean[];
-
-    public getId(): number {
-        return this.id;
-    }
-
-    public setId(id: number): void {
-        this.id = id;
-    }
-
-    public getName(): string {
-        return this.name;
-    }
-
-    public setName(name: string): void {
-        this.name = name;
-    }
-
-    public getCategory(): string {
-        return this.category;
-    }
-
-    public setCategory(category: string): void {
-        this.category = category;
-    }
-
-    public getPrice(): number {
-        return this.price;
-    }
-
-    public setPrice(price: number): void {
-        this.price = price;
-    }
-
-    public getDiscount(): number {
-        return this.discount;
-    }
-
-    public setDiscount(discount: number): void {
-        this.discount = discount;
-    }
-
-    public getImage(): string {
-        return this.image;
-    }
-
-    public setImage(image: string): void {
-        this.image = image;
-    }
+    } ;
     
 }
