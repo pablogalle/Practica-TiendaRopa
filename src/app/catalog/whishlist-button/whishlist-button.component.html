@@ -1,0 +1,4 @@
+<button class="btn" (click)="toggleLike()">
+    <fa-icon [icon]="regularHeartIcon" *ngIf="!like" size="lg" class="no-like"></fa-icon>
+    <fa-icon [icon]="solidHeartIcon" *ngIf="like" size="lg" class="like"></fa-icon>
+</button>

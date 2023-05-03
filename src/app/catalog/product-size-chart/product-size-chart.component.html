@@ -1,5 +1,13 @@
-<p>Size: </p>
-<div class="row">
-    <div class="col-md-1.5">
+<span>Sizes: </span>
+<div class="row" *ngIf="category == 'shoes'">
+    <div class="col-md-3 size" *ngFor="let size of shoeSizes; let sizeIndex= index">
+        <del *ngIf="!sizes[sizeIndex]">{{size}}</del>
+        <span *ngIf="sizes[sizeIndex]">{{size}}</span>
+    </div>
+</div>
+<div class="row" *ngIf="category !== 'shoes'">
+    <div class="col-md-3 size" *ngFor="let size of clotheSizes; let sizeIndex= index">
+        <del *ngIf="!sizes[sizeIndex]">{{size}}</del>
+        <span *ngIf="sizes[sizeIndex]">{{size}}</span>
     </div>
 </div>

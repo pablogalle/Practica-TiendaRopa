@@ -8,7 +8,8 @@ import { CatalogProductsComponent } from './catalog-products/catalog-products.co
 import { CatalogProductInfoComponent } from './catalog-product-info/catalog-product-info.component';
 import { CatalogProductPriceComponent } from './catalog-product-price/catalog-product-price.component';
 import { ProductSizeChartComponent } from './product-size-chart/product-size-chart.component';
-
+import { WhishlistButtonComponent } from './whishlist-button/whishlist-button.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -18,11 +19,13 @@ import { ProductSizeChartComponent } from './product-size-chart/product-size-cha
     CatalogProductsComponent,
     CatalogProductInfoComponent,
     CatalogProductPriceComponent,
-    ProductSizeChartComponent
+    ProductSizeChartComponent,
+    WhishlistButtonComponent
   ],
   imports: [
     CommonModule,
-    CatalogRoutingModule
+    CatalogRoutingModule,
+    FontAwesomeModule
   ]
 })
 export class CatalogModule { }

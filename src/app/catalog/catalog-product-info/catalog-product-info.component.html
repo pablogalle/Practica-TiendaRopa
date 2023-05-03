@@ -1,7 +1,18 @@
 <div class="container">
     <div class="row">
-        <div class="col-md-6">
-            
+        <div class="col">
+            <img [src]="producto.image" alt="Image of {{producto.name}}">
+        </div>
+        <div class="col">
+            <p class="category">{{producto.category}}</p>
+            <h1>{{producto.name}}</h1>
+            <app-catalog-product-price [price]="producto.price" [discount]="producto.discount" class="price"></app-catalog-product-price>
+            <div class="color-picker">
+                <p>Colors:</p>
+                <img [src]="producto.image" alt="" class="active">
+            </div>
+            <app-product-size-chart [sizesArray]="producto.sizes" [category]="producto.category"></app-product-size-chart>
+            <app-whishlist-button></app-whishlist-button>
         </div>
     </div>
 </div>

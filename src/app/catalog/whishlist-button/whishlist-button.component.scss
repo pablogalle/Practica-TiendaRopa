@@ -1,0 +1,29 @@
+fa-icon{
+    cursor: pointer;
+}
+.no-like{
+    color: black;
+}
+.like{
+    color: red;
+}
+
+.btn{
+    border-radius: 0;
+    border: 2px solid;
+}
+span{
+    padding: 5px;
+}
+
+.btn:hover{
+    background-color: black;
+
+    span{
+        color:white
+    }
+
+    .no-like{
+        color: white;
+    }
+}

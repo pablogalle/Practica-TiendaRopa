@@ -12,7 +12,7 @@ export class ProductInfoService{
     private http : HttpClient
   ) { }
 
-  public obtenerInfoProducto(id: string): Observable<ProductInfo> {
+  public obtenerInfoProducto(id: number): Observable<ProductInfo> {
     const urlEndPoint: string = "http://localhost:3002/product/"+id;
 
     return this.http.get<ProductInfo>(urlEndPoint);

@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { ProductInfoService } from './product-info.service';
+import { ProductInfo } from 'src/app/interfaces/productInfo.interface';
+import { ProductInfoImpl } from 'src/app/implementations/productInfo.model';
 
 @Component({
   selector: 'app-catalog-product-info',
@@ -8,18 +11,28 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class CatalogProductInfoComponent implements OnInit{
 
+  producto!: ProductInfo
+
+
   constructor(
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private productInfoService: ProductInfoService
   ){}
 
 
   ngOnInit(): void {
-    obtenerInfoProducto(this.route.snapshot.paramMap.get("id")!);
+    this.obtenerInfoProducto(this.route.snapshot.paramMap.get("id")!);
+  }
+
+  obtenerInfoProducto(id: string) {
+   this.productInfoService.obtenerInfoProducto(+id-1).subscribe(
+    (product) => {
+      this.producto = new ProductInfoImpl(product.sizes, product.id, product.name, product.category, product.price, product.discount, product.image);
+    }
+   ) 
   }
 
 }
 
-function obtenerInfoProducto(id: string | null) {
-  
-}
+
 

@@ -1,0 +1,23 @@
+
+.size{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border: 1px solid;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.size:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+del{
+    font-weight: lighter;
+}
+span{
+    font-weight: bold;
+}
