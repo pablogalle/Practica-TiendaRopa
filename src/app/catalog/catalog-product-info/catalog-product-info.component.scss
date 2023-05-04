@@ -7,14 +7,20 @@
                 text-transform: capitalize;
                 font-weight: lighter;
             }
-            h1{
+
+            h1 {
                 text-transform: capitalize;
                 font-weight: bolder;
             }
-            .price{
+
+            .price {
                 font-size: x-large;
             }
+
             .color-picker {
+                margin-top: 20px;
+                margin-bottom: 10px;
+
                 img {
                     width: 120px;
                 }
@@ -22,6 +28,21 @@
                 .active {
                     border-bottom: 4px solid;
                 }
+            }
+
+            .color-picker img:hover {
+                cursor: pointer;
+            }
+
+            .cart-btn {
+                border: 2px solid black;
+                border-radius: 0;
+                margin-top: 20px;
+            }
+
+            .cart-btn:hover {
+                background-color: black;
+                color: white;
             }
         }
     }

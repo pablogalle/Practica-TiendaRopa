@@ -2,6 +2,7 @@
     <div class="row">
         <div class="col">
             <img [src]="producto.image" alt="Image of {{producto.name}}">
+            
         </div>
         <div class="col">
             <p class="category">{{producto.category}}</p>
@@ -12,6 +13,10 @@
                 <img [src]="producto.image" alt="" class="active">
             </div>
             <app-product-size-chart [sizesArray]="producto.sizes" [category]="producto.category"></app-product-size-chart>
+            <button class="btn cart-btn">
+                Add to Cart
+                <fa-icon [icon]="shoppingCart"></fa-icon>
+            </button>
         </div>
     </div>
 </div>

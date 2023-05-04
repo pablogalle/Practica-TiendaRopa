@@ -1,4 +1,15 @@
-.navbar-nav li.active > a {
-    background-color: black;
-    color: whitesmoke;
+.navbar-nav {
+    li{
+        a{
+            font-size: larger;
+        }
+    }
+    li.active {
+        a {
+            background-color: black;
+            color: whitesmoke;
+            text-transform: capitalize;
+
+        }
+    }
 }

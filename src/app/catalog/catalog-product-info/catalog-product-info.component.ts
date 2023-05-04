@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { ProductInfoService } from './product-info.service';
 import { ProductInfo } from 'src/app/interfaces/productInfo.interface';
 import { ProductInfoImpl } from 'src/app/implementations/productInfo.model';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-catalog-product-info',
@@ -12,7 +13,7 @@ import { ProductInfoImpl } from 'src/app/implementations/productInfo.model';
 export class CatalogProductInfoComponent implements OnInit{
 
   producto!: ProductInfo
-
+  shoppingCart = faShoppingCart
 
   constructor(
     private route: ActivatedRoute,
