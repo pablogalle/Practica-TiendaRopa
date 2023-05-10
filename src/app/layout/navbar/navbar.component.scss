@@ -1,15 +1,14 @@
 .navbar-nav {
     li{
         a{
-            font-size: larger;
+            font-size: large;
+            text-transform: capitalize;
         }
     }
     li.active {
         a {
             background-color: black;
             color: whitesmoke;
-            text-transform: capitalize;
-
         }
     }
 }
