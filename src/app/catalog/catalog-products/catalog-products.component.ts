@@ -22,15 +22,15 @@ export class CatalogProductsComponent implements OnInit {
     this.obtenerProductos();
   }
 
-  navegarAInfoProducto(idProducto :number) {
-    this.router.navigate(['catalog/product/',idProducto])
+  navegarAInfoProducto(idProducto: number) {
+    this.router.navigate(['catalog/product/', idProducto])
   }
 
   obtenerProductos() {
     this.catalogProductsService.obtenerProductos().subscribe(
       (data) => {
-        data.forEach( (product) => {
-          const productImport: Product = new ProductImpl(product.id,product.name,product.category, product.price, product.discount, product.image, product.wishlist)
+        data.forEach((product) => {
+          const productImport: Product = new ProductImpl(product.id, product.name, product.category, product.price, product.discount, product.image, product.wishlist)
           this.products.push(productImport);
         });
       }

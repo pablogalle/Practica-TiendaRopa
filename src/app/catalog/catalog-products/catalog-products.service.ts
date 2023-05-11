@@ -7,7 +7,6 @@ import { Product } from 'src/app/interfaces/product.interface';
   providedIn: 'root'
 })
 export class CatalogProductsService {
-
   constructor(
     private http: HttpClient
   ) { }
