@@ -11,7 +11,7 @@
   </div>
 
   <div class="carousel-inner">
-    <div class="carousel-item active" *ngFor="let banner of banners">
+    <div class="carousel-item" *ngFor="let banner of banners ; let i = index" [ngClass]="i==0 ? 'active' : ''">
       <img [src]="banner.image" class="d-block w-100" [alt]="banner.title">
     </div>
   </div>
